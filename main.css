@@ -19,13 +19,13 @@ body {
   margin: 0 auto; 
 }
 
+/* ANSWER  NUMBER  4  IS  RIGHT  HERE!
+The max-width means they will not go larger than teh size of the parent*/
 img {
   max-width: 100%; 
 }
 
-/*button styles*/ 
-
-/* 1) The layout of "https://getbootstrap.com/docs/4.4/examples/pricing/" is the F pattern. You look along the top then the main content */
+/* number 1) The layout of "https://getbootstrap.com/docs/4.4/examples/pricing/" is the F pattern. You look along the top then the main content */
 
 /* EXPLAIN THIS STYLE RULE (1 mark) */ 
 
@@ -35,9 +35,9 @@ img {
   line-height: 1.5;
   border-radius: .3rem;
 }
-/* 2) targeting the button in the element with class of pricingTable
-It adds .5rem to the top ad bottom and 1rem to the left and right adds a line hight of 1.5 no unit needed and then a border radius of .3 rem to the button  */
 
+/* number 2) targeting the button in the element with class of pricingTable
+It adds .5rem to the top ad bottom and 1rem to the left and right adds a line hight of 1.5 no unit needed and then a border radius of .3 rem to the button  */
 
 .pricingTable section:first-of-type button {
   border: 1px solid #007bff;  
@@ -45,7 +45,7 @@ It adds .5rem to the top ad bottom and 1rem to the left and right adds a line hi
 
 /* FIX THIS STYLE RULE  (2 marks) */ 
 
-/* 3) missing a comma after the word button on the first line and missing a colon after background-color */
+/* number 3) missing a comma after the word button on the first line and missing a colon after background-color */
 
 .pricingTable section:nth-of-type(2) button,
 .pricingTable section:nth-of-type(3) button {
@@ -54,8 +54,10 @@ It adds .5rem to the top ad bottom and 1rem to the left and right adds a line hi
   border: transparent; 
 }
 
-/* 4) */
-/* 5) */
+/* number 5) and number 6) are the the coding */
+
+/* number 7 is number 4? */
+
 
 /* ----- default styles ----- */
 
@@ -89,6 +91,7 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid #dee2e6;
   box-shadow: 0 .125rem .25rem #00000013;
+  margin-bottom: 20px;
 }
 /* ----- nav styling ----- */
 
@@ -124,6 +127,20 @@ nav ul li:last-child a:hover {
   background-color: #007bff;
   color: #fff;
 }
+/* ----- banner image ----- */
+
+
+/* number 8) 
+I kept the new picture with the theme of the site*/
+.bannerimage {
+  height: 300px;
+  width: 100%;
+  background-image: url(./image/stretching.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* ----- main section styles ----- */
 .priceLine {
@@ -166,7 +183,6 @@ nav ul li:last-child a:hover {
   border-bottom: 1px solid #00000020;
   font-size: 1.5em;
   font-weight: 300;
-
 }
 
 .pricingTable section h3 {
@@ -179,6 +195,10 @@ nav ul li:last-child a:hover {
 h3 span {
   font-size: 80%;
   color: #6c757d;
+}
+
+.pricingTable img {
+  padding: 10px 30px;
 }
 
 .pricingTable ul {
@@ -213,6 +233,8 @@ h3 span {
   background-color: lightcoral;
 }
 
+/* ----- footer styling ------ */
+
 footer {
   padding-top: 3em;
   margin-top: 3em;
@@ -244,4 +266,12 @@ footer li {
 footer li:hover {
  text-decoration: underline; 
  cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 200%;
+  }
 }
