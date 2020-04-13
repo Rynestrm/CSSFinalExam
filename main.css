@@ -20,7 +20,7 @@ body {
 }
 
 /* ANSWER  NUMBER  4  IS  RIGHT  HERE!
-The max-width means they will not go larger than teh size of the parent*/
+The max-width means the image will not go larger than the size of the parent*/
 img {
   max-width: 100%; 
 }
@@ -93,7 +93,7 @@ header {
   box-shadow: 0 .125rem .25rem #00000013;
   margin-bottom: 20px;
 }
-/* ----- nav styling ----- */
+/* ----- nav styles ----- */
 
 nav ul {
   display: flex;
@@ -127,8 +127,8 @@ nav ul li:last-child a:hover {
   background-color: #007bff;
   color: #fff;
 }
-/* ----- banner image ----- */
 
+/* ----- banner image ----- */
 
 /* number 8) 
 I kept the new picture with the theme of the site*/
@@ -141,13 +141,12 @@ I kept the new picture with the theme of the site*/
   background-size: cover;
 }
 
-
 /* ----- main section styles ----- */
+
 .priceLine {
   margin: 50px auto 30px auto;
   width: 60%;
   font-weight: 100;
-
 }
 
 .priceLine h1 {
@@ -206,7 +205,7 @@ h3 span {
   margin-bottom: 1.5em;
   line-height: 1.5;
 }
-
+/* ------ button styles ------ */
 .pricingTable button {
   background-color: #fff;
   border-color: #007bff;
@@ -250,7 +249,7 @@ footer {
 footer div {
   text-align: left;
   padding: 0 15px;
-  /* just to use it the font face */
+  /* just to use it the font face I didn't feel the font was in the same style as the rest of the page so only used it in the footer */
   font-family: regular;
 }
 
@@ -270,6 +269,8 @@ footer li:hover {
 
 /* media queries */
 
+/* increasing all fonts by 200%
+I think 1.5em is already 150% larger than the base 10px so if you changed it to 120% I blieve that would be like changing 1.5em to 1.2em*/
 @media screen and (max-width: 600px) {
   body {
     font-size: 200%;
